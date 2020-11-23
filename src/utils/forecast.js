@@ -9,6 +9,7 @@ const forecast = ({latitude, longitude}, callback) => {
         } else if (body.success === false) {
             callback('No location found with given coordinates. Please input a valid coordinate', undefined)
         } else {
+            console.log(body.current)
             callback(undefined, body.current)
         }
     })

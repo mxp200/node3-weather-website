@@ -43,7 +43,7 @@ weatherForm.addEventListener('submit', (event) => {
                 console.log('Address: ' + data.address)
                 messageOne.textContent = data.location
                 messageTwo.textContent = data.forecast
-                messageThree.textContent = data.observation_time
+                messageThree.textContent = data.wind_status
             }
         })
     })
